@@ -21,7 +21,6 @@ func _exit_tree() -> void:
 		main_panel_instance.queue_free()
 
 
-
 # Determines whether this is a main screen panel that goes next to the main viewport change buttons
 func _has_main_screen() -> bool:
 	return true

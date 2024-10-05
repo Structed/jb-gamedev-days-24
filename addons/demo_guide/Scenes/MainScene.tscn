@@ -1,3 +1,23 @@
-[gd_scene format=3 uid="uid://dennta8gec2aq"]
+[gd_scene load_steps=2 format=3 uid="uid://dennta8gec2aq"]
 
-[node name="MainScene" type="Node2D"]
+[ext_resource type="Script" path="res://addons/demo_guide/Scenes/main_scene.gd" id="1_cb7fm"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cb7fm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AddMenuButton" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Add Menu"
+
+[node name="RemoveMenuButton" type="Button" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Remove Menu"
