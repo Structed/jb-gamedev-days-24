@@ -4,6 +4,7 @@ extends EditorPlugin
 const MainPanel : PackedScene = preload("res://addons/demo_guide/Scenes/MainScene.tscn")
 
 var main_panel_instance
+var plugin_name: String = "Demo Guide"
 
 func _enter_tree() -> void:
 	# Initialization of the plugin goes here.
@@ -20,7 +21,8 @@ func _exit_tree() -> void:
 		main_panel_instance.queue_free()
 
 
-# Determine's whether this is a main screen panel that goes next to the main viewport change buttons
+
+# Determines whether this is a main screen panel that goes next to the main viewport change buttons
 func _has_main_screen() -> bool:
 	return true
 
@@ -33,9 +35,9 @@ func _make_visible(visible) -> void:
 
 # Customize the text displayed on the button
 func _get_plugin_name() -> String:
-	return "Demo Guide"
+	return plugin_name
 
 
 # Customize the icon shown on the button
 func _get_plugin_icon() -> Texture2D:
-	return load("res://addons/demo_guide/Godot_icon.png")
+	return load("res://addons/demo_guide/Godot_icon.png") as Texture2D
