@@ -23,7 +23,7 @@ The GDExtension has a few more components to it:
 1. `/Sconstruct`: The build script for the GDExtension.
 2. `/src`: The source code for the GDExtension.
 3. `godot-cpp`: The Godot C++ bindings as a git submodule.
-2. Binaries are compiled into: `addons/demo_gdextension` folder. This is also where the `gdextension.gd` file is located, which lets the Editor know about the GDExtension.
+4. Binaries are compiled into: `addons/demo_gdextension` folder. This is also where the `gdextension.gd` file is located, which lets the Editor know about the GDExtension.
 
 ### Building
 Run `scons platform=windows` to build the GDExtension for Windows. You can also build for other platforms by changing the `platform` parameter.
@@ -32,4 +32,4 @@ Run `scons platform=windows` to build the GDExtension for Windows. You can also 
 This project has a GitHub Actions workflow that packages and deploys the Plugin to the Godot Asset Library.
 It needs some configuration, which you can easily do by updating the environment variables in workflow.
 
-The `.asset-template.json.hbs` file is a template for the asset metadata that is used the workflow to upload to the Asset Library. Please update it with your own Icon. The rest of the metadata will be inferred from the GitHub Actions context.
+The `.asset-template.json.hb` file is a template for the asset metadata that is used the workflow to upload to the Asset Library. Please update it with your own Icon. The rest of the metadata will be inferred from the GitHub Actions context.
