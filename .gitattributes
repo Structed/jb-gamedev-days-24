@@ -1,2 +1,27 @@
 # Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
+
+# IDE
+/.idea                        	export-ignore
+/.vscode                        export-ignore
+
+# Exclude other addons
+/addons/another-addon export-ignore
+
+# GDUnit - Godot Unit Test Framework
+/addons/gdUnit4                 export-ignore
+
+# Project items
+/addons/demo_guide/test      	export-ignore # Test project
+/raw_assets                     export-ignore # This is where I keep my raw assets
+demo-scene.gif                  export-ignore # Showing off the demo scene.
+
+# CI/CD
+GitVersion.yml                  export-ignore
+/.github                        export-ignore
+.asset-template.json.hb         export-ignore # Template for AssetLib publishing
+
+
+
+
+
