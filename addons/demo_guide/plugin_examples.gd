@@ -21,4 +21,4 @@ func _on_add_menu_button_pressed():
 
 func _on_remove_menu_button_pressed():
 	print("Handling remove menu button")
-	remove_tool_menu_item(plugin_name) # Replace with function body.
+	remove_tool_menu_item(plugin_name)
