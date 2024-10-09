@@ -13,6 +13,7 @@ void initialize_example_module(ModuleInitializationLevel p_level) {
 		return;
 	}
 
+	// Register each class.
 	GDREGISTER_CLASS(GDExample);
 }
 
@@ -33,7 +34,7 @@ GDExtensionBool GDE_EXPORT example_library_init(
 
 	init_obj.register_initializer(initialize_example_module);
 	init_obj.register_terminator(uninitialize_example_module);
-	init_obj.set_minimum_library_initialization_level(MODULE_INITIALIZATION_LEVEL_SCENE);
+	init_obj.set_minimum_library_initialization_level(MODULE_INITIALIZATION_LEVEL_SCENE); // core, servers, scene, editor, level
 
 	return init_obj.init();
 }
